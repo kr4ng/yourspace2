@@ -1,0 +1,6 @@
+=== yourspace2 Config Vars
+AWS_ACCESS_KEY_ID:            AKIAIQMLUU5EB2WSXH3Q
+AWS_SECRET_ACCESS_KEY:        XMJd68Yt98vcrXdi7QYc2nSwx4yVYBk85FlHbt6u
+AWS_STORAGE_BUCKET_NAME:      yourspace2
+DATABASE_URL:                 postgres://djbgcehizhrqjo:rxOsrY5s3N_edovQEidzsSkVMG@ec2-54-243-47-196.compute-1.amazonaws.com:5432/dd4do5ndgsaahd
+HEROKU_POSTGRESQL_COPPER_URL: postgres://djbgcehizhrqjo:rxOsrY5s3N_edovQEidzsSkVMG@ec2-54-243-47-196.compute-1.amazonaws.com:5432/dd4do5ndgsaahd
