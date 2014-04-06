@@ -51,7 +51,7 @@ ALLOWED_HOSTS = (
 # Database settings.
 
 DATABASES = {
-    "default": dj_database_url.config(default="postgresql://"),
+    "default": dj_database_url.config(default="postgres://djbgcehizhrqjo:rxOsrY5s3N_edovQEidzsSkVMG@ec2-54-243-47-196.compute-1.amazonaws.com:5432/dd4do5ndgsaahd"),
 }
 
 
