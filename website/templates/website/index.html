@@ -1,2 +1,9 @@
-<!--Make something happen-->
-<p>hello world!</p>
+{% if names %}
+    <ul>
+    {% for name in names %}
+        <li>{{ name.last_name }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
