@@ -23,7 +23,7 @@ margin-top: 25px;
 margin-top: 0px;
 margin-left: -25px !important;
 background-size: 100% 96%;
-background: url(../images/shop_slider_bg.png);
+/*background: url(../images/shop_slider_bg.png);*/
 }
 .hs_shop_heading {
 background: url(../images/shop_heading_seprator.png) NO-REPEAT;
