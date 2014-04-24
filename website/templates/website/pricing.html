@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+{% load staticfiles %}
 <!--
 **********************************************************************************************************
     Purchase this theme at Themeforest.net : http://themeforest.net/user/kamleshyadav/portfolio
@@ -7,7 +8,7 @@
 ********************************************************************************************************** -->
 <head>
 <!-- website title -->
-<title>Artist Sketch Responsive Template - Services Page</title>
+<title>Your Space | Pricing</title>
 <!-- favicon links -->
 <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 <link rel="icon" type="image/ico" href="favicon.ico" />
@@ -17,15 +18,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- all stylesheets: main.css -->
-<link href="css/main.css" rel="stylesheet" type="text/css" media="screen" id="style" />
+<link href={% static "css/main.css" %} rel="stylesheet" type="text/css" media="screen" id="style" />
 <!-- all scripts codes: JS -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"> </script>
-<script type="text/javascript" src="js/bx.js"> </script>
-<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-<script type="text/javascript" src="js/custom.js"> </script>
-<script type="text/javascript" src="js/skill.js"></script>
-<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src={% static "js/bootstrap.js" %}> </script>
+<script type="text/javascript" src={% static "js/bx.js" %}> </script>
+<script type="text/javascript" src={% static "js/jquery.mixitup.min.js" %}></script>
+<script type="text/javascript" src={% static "js/custom.js" %}> </script>
+<script type="text/javascript" src={% static "js/skill.js" %}></script>
+<script type="text/javascript" src={% static "js/modernizr.js" %}></script>
 <!-- Font  -->
 <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
 </head>
@@ -36,51 +37,36 @@
   <!-- Header-Part-Start -->
   <div class="row-fluid">
     <div class="span12">
-      <div class="span3 logo"> <a href="index.html"> <img src="./images/logo.png" alt="logo"/> </a> </div>
+      <div class="span3 logo"> <a href="index.html"> <img src={% static "./images/logo.png" %} alt="logo"/> </a> </div>
       <!-- Desktop-Main-Menu-Start  -->
       <div class="span7 hs_menu offset2">
         <ul class="hs_main_menu_bar">
-          <li> <a href="index.html" class="active">home </a> </li>
-          <li> <a href="#">Pages</a>
-            <ul class="sub-menu">
-              <li> <a href="about.html"> About </a> </li>
-              <li> <a href="services.html"> Services </a> </li>
-              <li> <a href="portfolio.html"> portfolio </a> </li>
-              <li> <a href="single_portfolio.html"> Single portfolio </a> </li>
-              <li> <a href="blog.html"> Blog </a> </li>
-              <li> <a href="blog_post.html"> Single Blog </a> </li>
-              <li> <a href="contact.html">contact </a> </li>
-              <li> <a href="404_error.html"> 404 Error </a> </li>
-              <li> <a href="search.html"> Search </a> </li>
-            </ul>
-          </li>
-          <li> <a href="services.html">services </a> </li>
-          <li> <a href="portfolio.html">portfolio </a> </li>
-          <li> <a href="blog.html">blog </a> </li>
-          <li> <a href="contact.html">contact </a> </li>
+          <li> <a href="index" class="active"> Home </a> </li>
+          <li> <a href="about" class="active"> About </a> </li>
+          <li> <a href="photos" class="active"> Photos </a> </li>
+          <li> <a href="pricing" class="active"> Pricing </a> </li>
+          <li> <a href="contact" class="active"> Contact </a> </li>
+          <li> <a href="https://clients.mindbodyonline.com/ASP/adm/home.asp?studioid=35687" class="active"> Reserve </a> </li>
         </ul>
       </div>
       <!-- Desktop-Main-Menu-End  --> 
       <!-- Mobile Menu Start  -->
       <select class="visible-phone select_nav select cmb">
-        <option value="index.html">home</option>
-        <option value="about.html"> about </option>
-        <option value="about.html"> --our team </option>
-        <option value="single_portfolio.html">--Single Portfolio</option>
-        <option value="blog.html"> blog</option>
-        <option value="services.html">services</option>
-        <option value="portfolio.html">portfolio</option>
-        <option value="blog.html">Blog</option>
-        <option value="contact.html">contact</option>
+        <option value="index">Home</option>
+        <option value="about"> About </option>
+        <option value="photos"> Photos </option>
+        <option value="pricing"> Pricing </option>
+        <option value="contact"> Contact </option>
+        <option value="https://clients.mindbodyonline.com/ASP/adm/home.asp?studioid=35687"> Reserve </option>
       </select>
       <!-- Mobile Menu End  --> 
-    </div>
+  </div>
   </div>
   <!-- Header-Part-End --> 
   <!-- Breadcrumb-Start -->
   <div class="row-fluid">
     <div class="span12">
-      <div class="span12 hs_left hs_heading_part"> <img src="./images/seprator.png" alt="seprator"/> </div>
+      <div class="span12 hs_left hs_heading_part"> <img src={% static "./images/seprator.png" %} alt="seprator"/> </div>
       <div class="span12 hs_left">
         <div class="span8 hs_inner_heading">
           <h1> Services For Satisfaction</h1>
@@ -88,11 +74,11 @@
         <div class="span4 hs_breadcrumb_part hs_left">
           <ul class="hs_breadcrumb">
             <li> <a href="index.html"> home </a> </li>
-            <li> <a href="services.html"> services </a> </li>
+            <li> <a href="services.html"> pricing </a> </li>
           </ul>
         </div>
       </div>
-      <div class="span12 hs_left hs_heading_part"> <img src="./images/seprator.png" alt="seprator"/> </div>
+      <div class="span12 hs_left hs_heading_part"> <img src={% static "./images/seprator.png" %} alt="seprator"/> </div>
     </div>
   </div>
   <!-- Breadcrumb-End --> 
