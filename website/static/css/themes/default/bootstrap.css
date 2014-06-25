@@ -7258,7 +7258,7 @@ body {
   height: 100%;
   text-align: center;
   margin-right: 1.28205%;
-  margin-left: 1.28205% !important;
+  margin-left: 0% !important;
 }
 /*
 *
@@ -9642,7 +9642,7 @@ body {
   height: 100%;
   text-align: center;
   margin-right: 1.28205%;
-  margin-left: 1.28205% !important;
+  margin-left: 0% !important;
 }
 /*
 *
@@ -9757,7 +9757,7 @@ footer {
   bottom: 20px;
 }
 .row-fluid .span7.span-fixed-sidebar .row-fluid .span3.floating-box {
-  border: 1px solid #333333;
+  border: 1px solid red;
   height: 150px;
   background: #ffffff;
   margin-left: 7.42%;
