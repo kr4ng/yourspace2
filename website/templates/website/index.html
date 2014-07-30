@@ -30,7 +30,30 @@
 	<script type="text/javascript" src={% static "js/bootstrap.js" %}></script>
 	<script type="text/javascript" src={% static "js/perfect-scrollbar-0.3.3/perfect-scrollbar.js" %}></script>
 	<script type="text/javascript" src={% static "js/global.js" %}></script>
-	
+
+<!-- Add venobox -->
+<link rel="stylesheet" href={% static "venobox/venobox.css" %} type="text/css" media="screen" />
+<script type="text/javascript" src={% static "venobox/venobox.min.js" %}></script>	
+<!--init the box-->
+<script>
+	$(document).ready(function(){
+
+	/* default settings */
+	$('.venobox').venobox(); 
+	console.log('lolz');
+
+	/* open content with custom settings */
+	$('.venobox_custom').venobox({
+		framewidth: '300px',
+		frameheight: '250px',
+		border: '6px',
+		bordercolor: '#ba7c36',
+		numeratio: true,
+		infinigall: true
+	});
+
+});
+</script>
 </head>
 
 <body>
@@ -39,7 +62,7 @@
 		<div class="row-fluid main-row">
 			<div id="boxyred" class="span5 main-wrapper">
 
-				<div id="login"><a href='https://clients.mindbodyonline.com/ASP/home.asp?studioid=35687'>Login Now</a></div>
+				<div id="login"><a href='http://clients.mindbodyonline.com/ws.asp?studio=YourSpace&stype=40&prodid=101'>Become a Member</a></div>
 				
 				<div class="row-fluid logo">
 					<img src={% static 'images/yourspacelogo.png' %} />
@@ -57,7 +80,7 @@
 							
 							<div class="offset1 span10">
 								<h2>This is Your <span id='accentred'>Space</span> to grow into at Your <span id='accentred'>Pace</span></h2>
-								<h2>Think. Work. Network. Produce.</h2>
+								<h2>Pasadena's best coworking space</h2>
 							</div>
 							
 						</div>
@@ -150,25 +173,25 @@
 													<tbody>
 														<tr>
 															<td><a id='mblink' href="mindbodyonline.com">Your General Membership</a></td>
-															<td>&#36; 110</td>
-															<td>&#36; 100</td>
-															<td>&#36; 90</td>
+															<td><a href='http://clients.mindbodyonline.com/ws.asp?studio=YourSpace&stype=40&prodid=101'>&#36; 110</a></td>
+															<td><a href='http://clients.mindbodyonline.com/ws.asp?studio=YourSpace&stype=40&prodid=103'>&#36; 100</a></td>
+															<td><a href='http://clients.mindbodyonline.com/ws.asp?studio=YourSpace&stype=40&prodid=109'>&#36; 90</a></td>
 														</tr>
 														<tr>
 															<td><a id='mblink' href="mindbodyonline.com">Your Desk Membership</a></td>
-															<td>&#36; 530</td>
-															<td>&#36; 505</td>
-															<td>&#36; 430</td>
+															<td><a href='http://clients.mindbodyonline.com/ws.asp?studio=YourSpace&stype=40&prodid=105'>&#36; 530</a></td>
+															<td><a href='http://clients.mindbodyonline.com/ws.asp?studio=YourSpace&stype=40&prodid=107'>&#36; 505</a></td>
+															<td><a href='http://clients.mindbodyonline.com/ws.asp?studio=YourSpace&stype=40&prodid=111'>&#36; 430</a></td>
 														</tr>
 														<tr>
 															<td><a id='mblink' href="mindbodyonline.com">Your Office Membership</a></td>
-															<td>&#36; 1200</td>
-															<td>&#36; 1100</td>
-															<td>&#36;1000</td>
+															<td><a href='http://clients.mindbodyonline.com/ws.asp?studio=YourSpace&stype=40&prodid=113'>&#36; 1200</a></td>
+															<td><a href='http://clients.mindbodyonline.com/ws.asp?studio=YourSpace&stype=40&prodid=114'>&#36; 1100</a></td>
+															<td><a href='http://clients.mindbodyonline.com/ws.asp?studio=YourSpace&stype=40&prodid=115'>&#36;1000</a></td>
 														</tr>
 														<tr>
 															<td><a id='mblink' href="mindbodyonline.com">Your Mailbox</a></td>
-															<td>&#36; 50</td>
+															<td><a href='http://clients.mindbodyonline.com/ws.asp?studio=YourSpace&stype=40&prodid=100'>&#36; 50</a></td>
 															<td></td>
 															<td></td>
 														</tr>
@@ -183,12 +206,12 @@
 													<tbody>
 														<tr>
 															<td><a id='mblink' href="mindbodyonline.com">Per Hour</a></td>
-															<td>&#36; 30</td>
+															<td><a href='http://clients.mindbodyonline.com/ws.asp?studioid=35687&stype=41&prodid=10111'>&#36; 30</a></td>
 															
 														</tr>
 														<tr>
 															<td><a id='mblink' href="mindbodyonline.com">Block of 10 Hrs</a></td>
-															<td>&#36; 285</td>
+															<td><a href='http://clients.mindbodyonline.com/ws.asp?studioid=35687&stype=41&prodid=10124'>&#36; 285</a></td>
 														
 														</tr>
 													</tbody>
@@ -215,14 +238,14 @@
 										<div class="span10 offset1 gallery">	
 											<div class="row-fluid">
 												<ul id="gallery">
-													<li class="gallery-item span4 first">
+																										<li class="gallery-item span4 ">
 														<a href="#" class="thumbnail">
 														<img src={% static "css/images/gallery/portfolio-1.jpg" %} alt="">
 														</a>
 													</li>
-																										<li class="gallery-item span4 ">
+																										<li class="gallery-item span4 first">
 														<a href="#" class="thumbnail">
-														<img src={% static "css/images/gallery/portfolio-2.jpg" %} alt="">
+														<img src={% static "css/images/gallery/portfolio-4.jpg" %} alt="">
 														</a>
 													</li>
 																										<li class="gallery-item span4 ">
@@ -416,7 +439,7 @@
 						<p>Check out Your Space</p>
 						</a>
 						
-						<a href="#" data-section="2" data-title="Browse our services and our prices" class="span3 floating-box">
+						<a href="#" data-section="2" data-title="Browse our services and our prices or <a href='http://clients.mindbodyonline.com/ws.asp?studioid=35687'>view them all</a>" class="span3 floating-box">
 						<h3>Pricing</h3>
 						<ul>
 							<li>First Day Free</li>
