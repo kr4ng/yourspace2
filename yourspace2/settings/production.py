@@ -45,6 +45,9 @@ ALLOWED_HOSTS = (
     "{HEROKU_APP_NAME}.herokuapp.com".format(
         HEROKU_APP_NAME = HEROKU_APP_NAME,
     ),
+    "www.yourspacecoworking.com",
+    "www.yourspacecowork.com",
+    "www.yscowork.com",
 )
 
 
